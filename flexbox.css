@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Alice', serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body{
+    background-color: whitesmoke;
+    /* padding: 0; */
+    margin: 0;
+}
+
+h2{
+    /* text-align: center; */
+}
+
+.service-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service-box{
+    border: 1px solid rgb(171, 159, 159);
+    flex-basis: 32%;
+    padding: 7px;
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.service-box h3{
+    margin: 5px 0 10px;
+}
+
+.service-box p{
+    margin: 0 0 10px;
+}
+
+
+.cta{
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.cta a {
+    background: grey;
+    padding: 8px 15px;
+    color: white;
+    display: block;
+}
+
+.service-box img{
+    width: 100%;
+}
+
+
+#main{
+    display: flex;
+}
+
+
+aside{
+    flex: 0 0 20vw;
+    background: beige;
+    padding: 19px;
+}
+
+aside img{
+    width: 100%;
+}
+
+aside ul{
+    padding: 0;
+}
+
+aside ul a{
+    padding: 15px;
+    color: rgb(1, 127, 43);
+    display: block;
+    border-bottom: 1px solid grey;
+}
+
+
+
+footer{
+    color: aliceblue;
+    background-color: black;
+    padding: 40px 0;
+text-align: center;
+}
+
+
+article{
+    margin-left: 18px;
+    padding: 15px;
+}
+ 
+
+@media screen and (max-width:900px){
+.service-box{
+    flex-basis: 48%;
+}
+
+
+}
+
+
+
+
+@media screen and (max-width:852px){
+aside{
+    flex: 0 0 30vw;
+}
+
+.service-box{
+    flex-basis: 48%;
+}
+
+}
+
+@media screen and (max-width:725px){
+    .service-container{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:600px){
+    article{
+        order: -1;
+    }
+    #main{
+        flex-direction: column;
+    }
+
+    .service-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    
+}
+
+
+@media screen and (max-width:390px){
+    footer{
+        padding: 22px 0;
+    }
+
+    .pdd{
+        font-size: 14px;
+    }
+
+    .service-box p{
+        font-size: 13px;
+    }
+
+}
+
+
+@media screen and (max-width:330px){
+    h2{
+        font-size: 22px;
+    }
+
+    .pdd{
+        font-size: 14px;
+    }
+
+    .service-box p{
+        font-size: 14px;
+    }
+
+    footer{
+        padding: 28px 0;
+    }
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
